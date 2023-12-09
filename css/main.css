@@ -1,0 +1,907 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@200;400;700&family=Shippori+Mincho&display=swap");
+@font-face {
+  font-family: "haettenschweiler";
+  src: url("font/Royal_Rumble_Haettenschweiler.ttf") format("truetype");
+}
+html {
+  background-color: rgba(136, 164, 118, 1);
+}
+header h1 img {
+  padding: 62px 0px 0px 32px;
+  position: absolute;
+  z-index: 2;
+}
+header #header_logo {
+  display: block;
+  margin: 10px;
+  animation: 10s linear infinite rotation1;
+  color: black;
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  z-index: -1;
+  top: 25px;
+  left: 1px;
+  text-align: justify;
+  font-family: "haettenschweiler";
+}
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.firstView .firstView1 {
+  padding-top: 150px;
+  z-index: 1;
+}
+
+.idt {
+  text-align: center;
+  padding: 67px 29px 60px 29px;
+}
+.idt1 {
+  text-align: center;
+  padding: 41px 61px 57px 60px;
+  background-color: rgba(103, 128, 87, 1);
+  color: #fff;
+}
+.idt h2 {
+  font-size: 20px;
+  font-family: "Noto Serif JP";
+}
+.idt p {
+  padding-top: 24px;
+  font-size: 12px;
+  line-height: 28px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+.idt2 p img {
+  width: 55px;
+  height: 55px;
+  display: block;
+  margin: 0 auto;
+}
+.idt2 p {
+  font-size: 16px;
+  color: rgba(40, 40, 40, 1);
+  text-align: center;
+}
+.start {
+  margin: -5px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+/* 旅に魅力とは */
+#ctn h3 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  padding-bottom: 48px;
+  font-weight: lighter;
+}
+#ctn h3 span {
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+}
+.container {
+  background-color: #fff;
+  width: 317px;
+  height: 317px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.container h4 {
+  font-size: 24px;
+  font-family: "Noto Serif JP" serif;
+  padding: 19px 0 8px 20px;
+}
+.container .boys {
+  padding-left: 40px;
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 28px;
+  padding-left: 66px;
+  z-index: 2;
+  position: absolute;
+}
+
+.container h4 span {
+  font-size: 36px;
+}
+.container h4 {
+  font-size: 16px;
+}
+.container h4 ::after {
+  content: "";
+  background-color: rgba(103, 128, 87, 1);
+  width: 317px;
+  height: 317px;
+  position: absolute;
+  z-index: -1;
+  right: 22px;
+  padding-bottom: 15px;
+}
+.container img {
+  width: 132px;
+  height: 117px;
+  position: absolute;
+  left: 180px;
+  top: 200px;
+  z-index: 1;
+}
+/* 旅で得られるもの */
+.container1 {
+  background-color: #fff;
+  width: 317px;
+  height: 317px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.container1 h4 {
+  font-family: "Noto Serif JP";
+  padding: 19px 0 8px 20px;
+}
+.container1 h4 ::after {
+  content: "";
+  background-color: rgba(103, 128, 87, 1);
+  width: 317px;
+  height: 317px;
+  position: absolute;
+  z-index: -1;
+  right: 22px;
+  padding-bottom: 15px;
+}
+.container1 .boys {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 28px;
+  padding-left: 66px;
+  z-index: 2;
+  position: absolute;
+}
+
+.container1 h4 span {
+  font-size: 36px;
+}
+.container h4 {
+  font-size: 16px;
+}
+.container1 img {
+  width: 76px;
+  height: 100px;
+  position: absolute;
+  left: 220px;
+  top: 210px;
+  z-index: 0;
+}
+/* 一人旅の感想 */
+#tgs h3 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  margin-top: 130px;
+  padding-bottom: 48px;
+  font-weight: lighter;
+}
+#tgs {
+  position: relative;
+}
+#tgs h3 span {
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  position: relative;
+}
+
+.tgsSub p img {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.tgs_age1 p {
+  font-size: 16px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  background-color: rgba(103, 128, 87, 1);
+  color: #fff;
+  padding: 16px 36px 16px 36px;
+  width: 174px;
+  height: 64px;
+  border-radius: 0px 5px 5px 0px;
+  margin-bottom: 64px;
+}
+.tgs_age1 p span {
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+}
+
+/* 20代 */
+
+.tgs_content1 {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 326px;
+  height: 262px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.tgs_content1 figure::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(103, 128, 87, 1);
+  width: 326px;
+  height: 262px;
+  z-index: -1;
+  transform: rotate(6deg);
+  top: 0;
+  border-radius: 5px;
+}
+.tgs_content1 h4 {
+  text-align: center;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  padding: 30px 0 18px 0;
+}
+.tgs_content1 h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 50px;
+  height: 3px;
+  top: 58px;
+  right: 137px;
+}
+.tgs_content1 h4 span {
+  font-size: 24px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+.tgs_content1 figure img {
+  width: 96px;
+  height: 92px;
+  position: absolute;
+  right: 10px;
+  top: 158px;
+}
+.age20 img {
+  width: 34px;
+  height: 22px;
+  top: 31px;
+  right: 36px;
+  position: absolute;
+}
+.figure1 {
+  width: 80px;
+  height: 86px;
+}
+.tgs_content1 p {
+  line-height: 28px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 48px;
+  z-index: 1;
+}
+
+/* 20代*/
+
+.tgs_content2 {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 326px;
+  height: 262px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.tgs_content2 figure::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(103, 128, 87, 1);
+  width: 326px;
+  height: 262px;
+  z-index: -1;
+  transform: rotate(6deg);
+  top: 0;
+  border-radius: 5px;
+}
+.tgs_content2 h4 {
+  text-align: center;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  padding: 30px 0 18px 0;
+}
+.tgs_content2 h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 50px;
+  height: 3px;
+  top: 58px;
+  right: 137px;
+}
+.tgs_content2 h4 span {
+  font-size: 24px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+.tgs_content2 figure img {
+  width: 96px;
+  height: 92px;
+  position: absolute;
+  right: 10px;
+  top: 158px;
+}
+.age20_1 img {
+  width: 34px;
+  height: 22px;
+  top: 31px;
+  right: 36px;
+  position: absolute;
+}
+.tgs_content2 p {
+  line-height: 28px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 48px;
+  z-index: 1;
+}
+/* 30代 */
+
+.tgs_content3 {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 326px;
+  height: 262px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.tgs_content3 figure::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(103, 128, 87, 1);
+  width: 326px;
+  height: 262px;
+  z-index: -1;
+  transform: rotate(6deg);
+  top: 0;
+  border-radius: 5px;
+}
+.tgs_content3 h4 {
+  text-align: center;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  padding: 30px 0 18px 0;
+}
+.tgs_content3 h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 50px;
+  height: 3px;
+  top: 58px;
+  right: 137px;
+}
+.tgs_content3 h4 span {
+  font-size: 24px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+.tgs_content3 figure img {
+  width: 96px;
+  height: 92px;
+  position: absolute;
+  right: 10px;
+  top: 158px;
+}
+.age20_1 img {
+  width: 34px;
+  height: 22px;
+  top: 31px;
+  right: 36px;
+  position: absolute;
+}
+.tgs_content3 p {
+  line-height: 28px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 78px;
+  z-index: 1;
+}
+
+/* 30代 */
+.tgs_content4 {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 326px;
+  height: 262px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.tgs_content4 figure::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(103, 128, 87, 1);
+  width: 326px;
+  height: 262px;
+  z-index: -1;
+  transform: rotate(6deg);
+  top: 0;
+  border-radius: 5px;
+}
+.tgs_content4 h4 {
+  text-align: center;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  padding: 30px 0 18px 0;
+}
+.tgs_content4 h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 50px;
+  height: 3px;
+  top: 58px;
+  right: 137px;
+}
+.tgs_content4 h4 span {
+  font-size: 24px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+.tgs_content4 figure img {
+  width: 96px;
+  height: 92px;
+  position: absolute;
+  right: 10px;
+  top: 158px;
+}
+.age20_1 img {
+  width: 34px;
+  height: 22px;
+  top: 31px;
+  right: 36px;
+  position: absolute;
+}
+.tgs_content4 p {
+  line-height: 28px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 78px;
+  z-index: 1;
+}
+/* ソロトリの概念とは */
+/* 見出し */
+#csp .h3 {
+  text-align: center;
+  padding-top: 114px;
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+
+  padding-bottom: 48px;
+  position: relative;
+}
+h3 {
+  font-weight: lighter;
+}
+#csp h3 span {
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  position: relative;
+}
+.h3_top {
+  position: absolute;
+  left: 73px;
+}
+.h3_top {
+  left: 73px;
+  top: 114px;
+}
+.h3_button {
+  position: absolute;
+  right: 72px;
+  top: 147px;
+}
+
+/* 豊かな一人旅を */
+
+.concept {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  position: relative;
+  width: 280px;
+  height: 280px;
+  left: 3px;
+  top: 102px;
+}
+.concept h4 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  padding-top: 55px;
+  font-weight: lighter;
+}
+.concept p {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 74px;
+  padding-top: 15px;
+}
+.concept span p {
+  font-size: 96px;
+  font-family: "Shippori Mincho", serif;
+  color: rgba(221, 225, 0, 1);
+  -webkit-text-stroke: 1px #000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* 男性 */
+
+.concept figure {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  width: 128px;
+  height: 128px;
+  position: relative;
+  right: -220px;
+  bottom: -90px;
+}
+.concept figure img {
+  width: 92px;
+  height: 88px;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+.concept figure::after {
+  background-color: #fff;
+  border: solid 2px rgba(221, 225, 0, 1);
+  content: "";
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
+  position: absolute;
+  top: 96px;
+  right: 76px;
+}
+
+/* 旅は永遠もの */
+
+.concept2 {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  position: relative;
+  width: 280px;
+  height: 280px;
+  /* right: 3px; */
+  top: 102px;
+  margin-top: 34px;
+  margin-left: auto;
+}
+.concept2 h4 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  padding-top: 55px;
+  font-weight: lighter;
+}
+.concept2 p {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 74px;
+  padding-top: 15px;
+}
+.concept2 span p {
+  font-size: 96px;
+  font-family: "Shippori Mincho", serif;
+  color: rgba(221, 225, 0, 1);
+  -webkit-text-stroke: 1px #000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* 女性 */
+.concept2 figure {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  width: 128px;
+  height: 128px;
+  position: relative;
+  left: -70px;
+  bottom: -90px;
+}
+.concept2 figure img {
+  width: 82px;
+  height: 90px;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+.concept2 figure::after {
+  background-color: #fff;
+  border: solid 2px rgba(221, 225, 0, 1);
+  content: "";
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
+  position: absolute;
+  top: 110px;
+  right: 6px;
+}
+/* ソロトリの由来とは */
+.concept3 {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 116px;
+  margin-top: 34px;
+  right: -3px;
+}
+.concept3 h4 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  padding-top: 55px;
+  font-weight: lighter;
+}
+.concept3 p {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 25px;
+  position: absolute;
+  left: 60px;
+  padding-top: 15px;
+}
+.concept3 span p {
+  font-size: 96px;
+  font-family: "Shippori Mincho", serif;
+  color: rgba(221, 225, 0, 1);
+  -webkit-text-stroke: 1px #000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* 男性 */
+.concept3 figure {
+  background-color: #fff;
+  border-radius: 100%;
+  border: solid 2px rgba(221, 225, 0, 1);
+  width: 157px;
+  height: 157px;
+  position: relative;
+  left: 220px;
+  bottom: -120px;
+}
+.concept3 figure img {
+  width: 156px;
+  height: 108px;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+/* 旅への挑戦 */
+
+#charenge h3 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  margin-top: 130px;
+  padding-bottom: 48px;
+  font-weight: lighter;
+}
+#charenge h3 span {
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+  color: rgba(40, 40, 40, 1);
+  position: relative;
+}
+.charenge_content {
+  background-color: #fff;
+  width: 310px;
+  height: 580px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 2px rgba(221, 225, 0, 1);
+  position: relative;
+}
+.charenge_content h4 {
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+  padding-top: 50px;
+  text-align: center;
+}
+.charenge_content .p_main {
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  padding-top: 218px;
+  padding-left: 60px;
+  line-height: 28px;
+}
+.charenge_content .p_main span {
+  font-size: 14px;
+}
+.charenge_content .p_sub {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 20px;
+  color: rgba(98, 95, 95, 1);
+  margin-left: 60px;
+}
+.charenge_content .back_con {
+  font-size: 240px;
+  position: absolute;
+  font-family: "Noto Serif JP", serif;
+  top: 10px;
+  left: 85px;
+  color: rgba(221, 225, 0, 0.3);
+}
+.charenge_content button {
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  color: #fff;
+  background-color: rgba(221, 225, 0, 1);
+  width: 264px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.charenge_content .start {
+  font-size: 24px;
+  position: absolute;
+  font-family: "Noto Serif JP", serif;
+  top: 190px;
+  left: 125px;
+  color: rgba(221, 225, 0, 0.3);
+}
+/* それでも不安なあなたへ */
+
+.charenge_EX {
+  background-color: #fff;
+  width: 310px;
+  height: 580px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 2px rgba(103, 128, 87, 1);
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 126px;
+}
+.charenge_EX h4 {
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+  padding-top: 50px;
+  text-align: center;
+  padding-top: 78px;
+  padding-bottom: 5px;
+}
+.charenge_EX figure img {
+  width: 136px;
+  height: 136px;
+  margin-left: 16px;
+}
+.charenge_EX figcaption {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  margin-left: 16px;
+  margin-top: -20px;
+}
+.charenge_EX .back_con {
+  font-size: 200px;
+  position: absolute;
+  font-family: "Noto Serif JP", serif;
+  top: 130px;
+  left: 20px;
+  color: rgba(136, 164, 118, 0.2);
+}
+.charenge_EX .fig img {
+  width: 118px;
+  height: 100px;
+  position: absolute;
+  right: 10px;
+  top: 230px;
+}
+.charenge_EX .fig figcaption {
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  position: absolute;
+  right: 10px;
+  bottom: 210px;
+}
+.charenge_EX .cha_con {
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  top: 395px;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  left: 100px;
+}
+.charenge_EX .cha_img {
+  position: absolute;
+  top: 430px;
+  left: 125px;
+  width: 60px;
+  height: 60px;
+}
+.charenge_EX .cha_text {
+  position: absolute;
+  bottom: 24px;
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  left: 50px;
+}
+
+/* フッター */
+.footer {
+  position: relative;
+}
+.footer ul {
+  display: grid;
+  gap: 25px;
+  padding-left: 35px;
+  font-size: 16px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+}
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer_img img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 48px;
+  top: 122px;
+}
+.footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  margin: 40px 0 30px 0;
+}
