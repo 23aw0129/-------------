@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/swiper-bundle.js" defer></script>
+        <!-- GSAP CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <!-- GSAP ScrollTrirrer CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <title>ソロトリ(若年層の増加)</title>
   </head>
@@ -12,7 +24,7 @@
     <!-- ファーストビュー -->
     <header>
       <h1><img src="image/logo.png" alt="ケツァール" /></h1>
-      <p id="header_logo">Trip - Life - Charenge -</p>
+      <p id="header_logo">Trip - Life - Charenge -&nbsp;</p>
       <div class="firstView">
         <div class="firstView1">
           <img src="image/firstView1.png" alt="リュック" />
@@ -43,38 +55,112 @@
       <!-- 旅の魅力 -->
       <div id="ctn">
         <h3 class="h3"><span>旅</span>の魅力とは</h3>
-        <div class="container">
-          <h4><span>旅</span>とは</h4>
-          <p class="boys">
-            「旅」は目的地に至るまでの過程を<br />
-            重視しているところです。目的地に<br />
-            至るまでの道のり、そこで出会った<br />
-            人々、見たことのない景色などすべ<br />
-            てがこの「旅」の過程となります。<br />
-            「旅」を通して成長するという点で<br />
-            区別する方もいるようです。
-          </p>
-          <p><img src="image/boys1.png" alt="男性" /></p>
-        </div>
-        <div class="container1">
-          <h4><span>旅</span>で得られるもの</h4>
-          <p class="boys">
-            一人旅を経験することで「一人で判断・<br />
-            決断」「チャレンジ精神」「多様な価値<br />
-            観の受け入れ」など様々なスキルを身に<br />
-            着けることができるようになります。<br />
-            このスキルを成長させることでより充実<br />
-            した生活を送れるようになります。
-          </p>
-          <p><img src="image/girls1.png" alt="女性" /></p>
+          <div class="con_1">
+            <div class="container">
+            <h4><span>旅</span>とは</h4>
+              <p class="boys">
+              「旅」は目的地に至るまでの過程を<br />
+              重視しているところです。目的地に<br />
+              至るまでの道のり、そこで出会った<br />
+              人々、見たことのない景色などすべ<br />
+              てがこの「旅」の過程となります。<br />
+              「旅」を通して成長するという点で<br />
+              区別する方もいるようです。
+              </p>
+              <p><img src="image/boys1.png" alt="男性" /></p>
+            </div>
+          </div>
+          <div class="con_2">
+            <div class="container1">
+            <h4><span>旅</span>で得られるもの</h4>
+            <p class="boys">
+              一人旅を経験することで「一人で判断・<br />
+              決断」「チャレンジ精神」「多様な価値<br />
+              観の受け入れ」など様々なスキルを身に<br />
+              着けることができるようになります。<br />
+              このスキルを成長させることでより充実<br />
+              した生活を送れるようになります。
+            </p>
+            <p><img src="image/girls1.png" alt="女性" /></p>
+          </div>
         </div>
       </div>
       <!-- 旅をイメージさせる写真 -->
       <div class="img_content">
-        <img src="image/" alt="" />
-        <img src="image/" alt="" />
-        <img src="image/" alt="" />
-        <img src="image/" alt="" />
+        <ul> 
+          <!-- 1枚目 -->
+        <li class="img_item1">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/tokyo (2).png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/temple.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/fuzi.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/Monkey.png" alt="">
+              </div>
+            </div>
+        </li>
+        <!-- 二枚目 -->
+        <li class="img_item2">
+          <div class="swiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/Monkey.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/fuzi.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/temple.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/tokyo (2).png" alt="">
+              </div>
+            </div>
+        </li>
+        <!-- 3枚目 -->
+        <li class="img_item3">
+          <div class="swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/fuzi.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/temple.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/tokyo (2).png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/Monkey.png" alt="">
+              </div>
+            </div>
+        </li>
+        <!-- 4枚目 -->
+        <li class="img_item4">
+          <div class="swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/temple.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/fuzi.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/Monkey.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/tokyo (2).png" alt="">
+              </div>
+            </div>
+        </li>
+        </ul>
       </div>
       <!-- 一人旅の感想 -->
       <div id="tgs">
@@ -88,7 +174,7 @@
         </div>
         <div class="tgs_content">
           <div class="tgs_content1">
-            <h4><span>k</span>さん</h4>
+            <h4><span>K</span>さん</h4>
             <span class="age20">
               <img src="image/changeButton.png" alt="チェンジボタン" />
             </span>
@@ -123,10 +209,10 @@
         <div class="tgs_age1">
           <p><span>30代</span>の感想</p>
         </div>
-        <div class="tgs_content">
+        <div class="tgs_content5">
           <div class="tgs_content3">
             <h4><span>F</span>さん</h4>
-            <span class="age20_1">
+            <span class="age30">
               <img src="image/changeButton.png" alt="チェンジボタン" />
             </span>
             <p>
@@ -144,7 +230,7 @@
 
           <div class="tgs_content4">
             <h4><span>S</span>さん</h4>
-            <span class="age20_1">
+            <span class="age30_1">
               <img src="image/changeButton.png" alt="チェンジボタン" />
             </span>
             <p>
@@ -174,8 +260,8 @@
           <h3 class="h3_top"><span>ソロトリ</span>の</h3>
           <h3 class="h3_button"><span>概念</span>とは</h3>
         </div>
-
-        <div class="concept">
+      <div class="consept_event">
+        <div class="concept ai">
           <h4>豊かな一人旅を</h4>
           <p>
             旅を通して色々な体験や<br />
@@ -191,7 +277,7 @@
             <img src="image/boys4.png" alt="男性" />
           </figure>
         </div>
-        <div class="concept2">
+        <div class="concept2 ai">
           <h4>旅は永遠もの</h4>
           <p>
             旅とは得た経験や知識を<br />
@@ -207,7 +293,7 @@
             <img src="image/girls4.png" alt="女性" />
           </figure>
         </div>
-        <div class="concept3">
+        <div class="concept3 ai">
           <h4>ソロトリの由来</h4>
           <p>
             ソロトリとは非日常空間で過ごす<br />
@@ -225,10 +311,12 @@
           </figure>
         </div>
       </div>
+      </div>
       <!-- 旅への挑戦 -->
       <div id="charenge">
         <h3 class="h3"><span>旅</span>への挑戦</h3>
-        <div class="charenge_content">
+        <!-- コンテンツ内容説明 -->
+        <div class="charenge_content charenge_All">
           <h4>コンテンツ内容説明</h4>
           <p class="p_main">
             STEP1で今のあなたが成長<br />
@@ -244,8 +332,85 @@
           </p>
           <p class="back_con">0</p>
           <p class="start">STEP</p>
-          <button>次へ</button>
+          <button class="next_btn">次へ</button>
         </div>
+        <!-- 1 -->
+        <div class="charenge_content1 charenge_All">
+          <h4>旅に挑戦</h4>
+          <p class="p_main1">
+            全3STEP
+          </p>
+          <h5>成長・獲得したいスキル</h5>
+        <div class="cho">
+            <p>決断・判断力</p>
+            <input class="btn" type="checkbox"></input>
+            <p>チャレンジ精神</p>
+            <input class="btn" type="checkbox"></input>
+            <p>多様性</p>
+            <input class="btn" type="checkbox"></input>
+            <p>自分の可能性</p>
+            <input class="btn" type="checkbox"></input>
+            <p>特になし</p>
+            <input class="btn" type="checkbox"></input>
+        </div>       
+          <p class="back_con1">1</p>
+          <p class="start1">STEP</p>
+          <button class="next_btn">次へ</button>
+        </div>
+        <!-- 2 -->
+        <div class="charenge_content2 charenge_All">
+          <h4>旅に挑戦</h4>
+          <p class="b_main1">
+            ＜
+          </p>
+          <h5>成長・獲得したいスキル</h5>
+        <div class="cho">
+            <p>決断・判断力</p>
+            <input class="btn" type="checkbox"></input>
+            <p>チャレンジ精神</p>
+            <input class="btn" type="checkbox"></input>
+            <p>多様性</p>
+            <input class="btn" type="checkbox"></input>
+            <p>自分の可能性</p>
+            <input class="btn" type="checkbox"></input>
+            <p>特になし</p>
+            <input class="btn" type="checkbox"></input>
+        </div>       
+          <p class="back_con2">2</p>
+          <p class="start2">STEP</p>
+          <button class="next_btn">次へ</button>
+        </div>
+        <!-- 3 -->
+        <div class="charenge_content3 charenge_All">
+          <h4>旅に挑戦</h4>
+          <h5>あなたのプラン</h5>
+        <div class="cho">
+          <div class="place">
+            <p>場所&nbsp;：</p>
+            <p>岩手県</p>
+          </div>
+          <div class="ass">
+            <p>課題 ：</p>
+            <p>旅で目的地最寄りまで着いたら<br>
+              スマホ禁止（人に聞いてみよう）<br>
+              大雑把な計画を自分で密度を濃<br>
+              い旅へと変えていこう</p>
+          </div>
+          <div class="choice_con">
+            <p>内容：</p>
+            <p>そこの名物を3種類食べ<br>
+               観光スポットに4カ所行<br>
+               き宿は現地で取る<span>*宿泊あり</span></p>
+              <p>そこの名物を5種類食べ<br>
+                観光スポットに3カ所行<br>
+                く。<span>*宿泊なし</span></p>
+          </div> 
+        </div>       
+          <p class="back_con3">3</p>
+          <p class="start3">STEP</p>
+          <button class="back_btn">戻る</button>
+        </div>
+        <!-- 不安なあなたへ -->
         <div class="charenge_EX">
           <h4>それでも不安なあなたへ</h4>
           <figure>
@@ -265,6 +430,7 @@
         </div>
       </div>
     </main>
+    <!--  footer  -->
     <footer>
       <div class="footer">
         <ul>

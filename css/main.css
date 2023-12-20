@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Noto+Serif+JP:wght@200;400;700&family=Shippori+Mincho&display=swap");
-@font-face {
+/* @font-face {
   font-family: "haettenschweiler";
   src: url("font/Royal_Rumble_Haettenschweiler.ttf") format("truetype");
-}
+} */
 html {
   background-color: rgba(136, 164, 118, 1);
 }
@@ -17,7 +17,7 @@ header h1 img {
 header #header_logo {
   display: block;
   margin: 10px;
-  animation: 10s linear infinite rotation1;
+  /* animation: 10s linear infinite rotation1; */
   color: black;
   position: absolute;
   width: 110px;
@@ -27,6 +27,16 @@ header #header_logo {
   left: 1px;
   text-align: justify;
   font-family: "haettenschweiler";
+}
+
+.logo_4 {
+  animation: 6s linear infinite rotation1;
+}
+.logo_7 {
+  animation: 8s linear infinite rotation1;
+}
+.logo_10 {
+  animation: 10s linear infinite rotation1;
 }
 @keyframes rotation1 {
   0% {
@@ -44,6 +54,7 @@ header #header_logo {
 .idt {
   text-align: center;
   padding: 67px 29px 60px 29px;
+
 }
 .idt1 {
   text-align: center;
@@ -53,7 +64,7 @@ header #header_logo {
 }
 .idt h2 {
   font-size: 20px;
-  font-family: "Noto Serif JP";
+  font-family: "Noto Serif JP",sans-serif;
 }
 .idt p {
   padding-top: 24px;
@@ -73,7 +84,7 @@ header #header_logo {
   text-align: center;
 }
 .start {
-  margin: -5px;
+  margin-top: -5px;
   font-family: "Noto Serif JP", serif;
   font-size: 16px;
   font-weight: lighter;
@@ -101,9 +112,18 @@ header #header_logo {
   display: block;
   margin: 0 auto;
 }
+.container h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 69px;
+  height: 3px;
+  top: 62px;
+  left: 20px;
+}
 .container h4 {
-  font-size: 24px;
-  font-family: "Noto Serif JP" serif;
+  /* font-size: 24px; */
+  font-family: "Noto Serif JP", serif;
   padding: 19px 0 8px 20px;
 }
 .container .boys {
@@ -119,16 +139,14 @@ header #header_logo {
 .container h4 span {
   font-size: 36px;
 }
-.container h4 {
-  font-size: 16px;
-}
+
 .container h4 ::after {
   content: "";
   background-color: rgba(103, 128, 87, 1);
   width: 317px;
   height: 317px;
   position: absolute;
-  z-index: -1;
+  z-index: -1 ;
   right: 22px;
   padding-bottom: 15px;
 }
@@ -149,6 +167,15 @@ header #header_logo {
   display: block;
   margin: 0 auto;
   margin-top: 40px;
+}
+.container1 h4::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(221, 225, 0, 1);
+  width: 148px;
+  height: 3px;
+  top: 62px;
+  left: 20px;
 }
 .container1 h4 {
   font-family: "Noto Serif JP";
@@ -176,9 +203,7 @@ header #header_logo {
 .container1 h4 span {
   font-size: 36px;
 }
-.container h4 {
-  font-size: 16px;
-}
+
 .container1 img {
   width: 76px;
   height: 100px;
@@ -186,6 +211,64 @@ header #header_logo {
   left: 220px;
   top: 210px;
   z-index: 0;
+}
+
+/* スライダー */
+
+.img_content ul {
+  padding: 0;
+  width: 390px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 200px 180px;
+  gap: 5px;
+  margin-top: 120px;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+.swiper1,
+.swiper2,
+.swiper3{
+  height: 180px;
+}
+.swiper_wrapper{
+  transition-timing-function: linear ;
+
+}
+.img_content ul li img{
+  width: 100%;
+  min-height: 100%;
+}
+.img_content ul li:nth-child(1){
+  height: 200px;
+  grid-column: 1/11;
+  margin: 0 0 -10px 0;
+  clip-path: polygon(0 3%, 100% 20%, 100% 100%, 0 100%);
+}
+.img_content ul li:nth-child(2){
+  
+  height: 180px;
+  grid-column: 1/5;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+}
+.img_content ul li:nth-child(3){
+  
+  height: 180px;
+  grid-column: 5/9;
+  margin: 0 0 0 -150px;
+  clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+
+}
+.img_content ul li:nth-child(4){
+  
+  height: 180px;
+  grid-column: 5/11;
+  margin: -185px 0 0 10px;
+  clip-path: polygon(68% 0, 100% 0, 100% 100%, 0% 100%);
+
 }
 /* 一人旅の感想 */
 #tgs h3 {
@@ -201,6 +284,7 @@ header #header_logo {
 #tgs {
   position: relative;
 }
+
 #tgs h3 span {
   font-size: 36px;
   font-family: "Noto Serif JP", serif;
@@ -241,23 +325,27 @@ header #header_logo {
   position: relative;
   display: block;
   margin: 0 auto;
+  z-index: 0px;
+  margin-bottom: 60px;
+  
 }
-.tgs_content1 figure::after {
+/* .tgs_content1 figure::after {
   content: "";
   position: absolute;
   background-color: rgba(103, 128, 87, 1);
   width: 326px;
   height: 262px;
   z-index: -1;
-  transform: rotate(6deg);
+  
   top: 0;
   border-radius: 5px;
-}
+} */
 .tgs_content1 h4 {
   text-align: center;
   font-size: 16px;
   font-family: "BIZ UDPGothic", sans-serif;
   padding: 30px 0 18px 0;
+  
 }
 .tgs_content1 h4::after {
   content: "";
@@ -277,8 +365,7 @@ header #header_logo {
   height: 92px;
   position: absolute;
   right: 10px;
-  top: 158px;
-}
+  top: 168px;}
 .age20 img {
   width: 34px;
   height: 22px;
@@ -300,27 +387,33 @@ header #header_logo {
 }
 
 /* 20代*/
-
+@keyframes fuwa {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .tgs_content2 {
   background-color: #fff;
   border-radius: 5px;
   width: 326px;
   height: 262px;
-  position: relative;
+  position: absolute;
   display: block;
   margin: 0 auto;
-}
-.tgs_content2 figure::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(103, 128, 87, 1);
-  width: 326px;
-  height: 262px;
-  z-index: -1;
+  box-sizing: border-box;
+  border: solid 10px rgba(103, 128, 87, 1);
   transform: rotate(6deg);
-  top: 0;
-  border-radius: 5px;
+  top: 330px;
+  z-index: -1;
+  left: 30px;
 }
+.fuwa {
+  animation: fuwa .5s ease;
+}
+
 .tgs_content2 h4 {
   text-align: center;
   font-size: 16px;
@@ -334,18 +427,18 @@ header #header_logo {
   width: 50px;
   height: 3px;
   top: 58px;
-  right: 137px;
+  right: 130px;
 }
 .tgs_content2 h4 span {
   font-size: 24px;
   font-family: "BIZ UDPGothic", sans-serif;
 }
 .tgs_content2 figure img {
-  width: 96px;
-  height: 92px;
+  width: 80px;
+  height: 86px;
   position: absolute;
   right: 10px;
-  top: 158px;
+  top: 154px;
 }
 .age20_1 img {
   width: 34px;
@@ -373,7 +466,7 @@ header #header_logo {
   display: block;
   margin: 0 auto;
 }
-.tgs_content3 figure::after {
+/* .tgs_content3 figure::after {
   content: "";
   position: absolute;
   background-color: rgba(103, 128, 87, 1);
@@ -383,7 +476,7 @@ header #header_logo {
   transform: rotate(6deg);
   top: 0;
   border-radius: 5px;
-}
+} */
 .tgs_content3 h4 {
   text-align: center;
   font-size: 16px;
@@ -410,7 +503,7 @@ header #header_logo {
   right: 10px;
   top: 158px;
 }
-.age20_1 img {
+.age30 img {
   width: 34px;
   height: 22px;
   top: 31px;
@@ -422,8 +515,9 @@ header #header_logo {
   font-family: "BIZ UDPGothic", sans-serif;
   font-size: 12px;
   position: absolute;
-  right: 78px;
+  right: 68px;
   z-index: 1;
+  top: 72px;
 }
 
 /* 30代 */
@@ -432,21 +526,29 @@ header #header_logo {
   border-radius: 5px;
   width: 326px;
   height: 262px;
-  position: relative;
+  position: absolute;
   display: block;
   margin: 0 auto;
+  box-sizing: border-box;
+  border: solid 10px rgba(103, 128, 87, 1);
+  transform: rotate(6deg);
+  top: 780px;
+  z-index: -1;
+  left: 30px;
 }
-.tgs_content4 figure::after {
+/* .tgs_content4 figure::after {
   content: "";
   position: absolute;
-  background-color: rgba(103, 128, 87, 1);
+  background-color: #fff;
   width: 326px;
   height: 262px;
   z-index: -1;
   transform: rotate(6deg);
   top: 0;
   border-radius: 5px;
-}
+  right: -10px;
+  top: -10px;
+} */
 .tgs_content4 h4 {
   text-align: center;
   font-size: 16px;
@@ -460,20 +562,20 @@ header #header_logo {
   width: 50px;
   height: 3px;
   top: 58px;
-  right: 137px;
+  right: 130px;
 }
 .tgs_content4 h4 span {
   font-size: 24px;
   font-family: "BIZ UDPGothic", sans-serif;
 }
 .tgs_content4 figure img {
-  width: 96px;
-  height: 92px;
+  width: 78px;
+  height: 98px;
   position: absolute;
   right: 10px;
-  top: 158px;
+  top: 144px;
 }
-.age20_1 img {
+.age30_1 img {
   width: 34px;
   height: 22px;
   top: 31px;
@@ -485,8 +587,9 @@ header #header_logo {
   font-family: "BIZ UDPGothic", sans-serif;
   font-size: 12px;
   position: absolute;
-  right: 78px;
+  right: 68px;
   z-index: 1;
+  top: 72px;
 }
 /* ソロトリの概念とは */
 /* 見出し */
@@ -730,6 +833,8 @@ h3 {
   color: rgba(40, 40, 40, 1);
   position: relative;
 }
+
+/* 0 */
 .charenge_content {
   background-color: #fff;
   width: 310px;
@@ -739,6 +844,7 @@ h3 {
   border-radius: 10px;
   border: solid 2px rgba(221, 225, 0, 1);
   position: relative;
+  z-index: 4;
 }
 .charenge_content h4 {
   font-size: 24px;
@@ -767,7 +873,7 @@ h3 {
 .charenge_content .back_con {
   font-size: 240px;
   position: absolute;
-  font-family: "Noto Serif JP", serif;
+  font-family: "Shippori Mincho", serif;
   top: 10px;
   left: 85px;
   color: rgba(221, 225, 0, 0.3);
@@ -789,8 +895,295 @@ h3 {
   position: absolute;
   font-family: "Noto Serif JP", serif;
   top: 190px;
-  left: 125px;
+  left: 121px;
   color: rgba(221, 225, 0, 0.3);
+}
+
+
+/* 1 */
+.charenge_content1{
+  width: 310px;
+  height: 580px;
+  border-radius: 10px;
+  border: 2px solid rgba(221, 225, 0, 1);
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+.charenge_content1 h4{
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+  padding-top: 69px;
+  text-align: center;
+}
+.charenge_content1 .p_main1{
+  font-family:"Shippori Mincho", serif;
+  font-size: 12px;
+  margin-top: -5px;
+  margin-left: 170px;
+}
+.charenge_content1 h5{
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  width: 165px;
+  margin: 10px auto 50px;
+}
+.charenge_content1 .cho{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(5,1fr);
+  width: 165px;
+  row-gap: 40px;
+  margin: 0 auto 46px;
+  align-items: center;
+}
+.charenge_content1 .cho p{
+  grid-column: 1/4;
+}
+.charenge_content1 .cho input{
+  grid-column: 4/5;
+  margin-left: auto;
+  width: 21px;
+  height: 21px;
+}
+.charenge_content1 .next_btn{
+  display: block;
+  width: 264px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  background-color: rgba(221, 225, 0, 1);
+  margin-top: -28px;
+  margin-left: 20px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.charenge_content1 .back_con1 {
+  font-size: 320px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: -26px;
+  left: -28px;
+  color: rgba(221, 225, 0, 0.3);
+}
+.charenge_content1 .start1 {
+  font-size: 32px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: 350px;
+  left: 10px;
+  color: rgba(221, 225, 0, 0.3);
+}
+
+/* 2 */
+.charenge_content2{
+  width: 310px;
+  height: 580px;
+  border-radius: 10px;
+  border: 2px solid rgba(221, 225, 0, 1);
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+.charenge_content2 h4{
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+  padding-top: 69px;
+  text-align: center;
+}
+.charenge_content2 .b_main1{
+  font-family:"Shippori Mincho", serif;
+  padding: 6px 9px;
+  font-size: 12px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  color: rgba(221, 225, 0, 1);
+  /* margin-top: -80px; */
+  top: 18px;
+  left: 32px;
+  position: absolute;
+}
+.charenge_content2 h5{
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  width: 165px;
+  margin: 10px auto 50px;
+}
+.charenge_content2 .cho{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:repeat(5,1fr);
+  width: 165px;
+  row-gap: 40px;
+  margin: 0 auto 46px;
+  align-items: center;
+}
+.charenge_content2 .cho p{
+  grid-column: 1/4;
+}
+.charenge_content2 .cho input{
+  grid-column: 4/5;
+  margin-left: auto;
+  width: 21px;
+  height: 21px;
+}
+.charenge_content2 .next_btn{
+  display: block;
+  width: 264px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  background-color: rgba(221, 225, 0, 1);
+  margin-top: -15px;
+  margin-left: 20px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.charenge_content2 .back_con2 {
+  font-size: 320px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: 100px;
+  right: -10px;
+  color: rgba(221, 225, 0, 0.3);
+}
+.charenge_content2 .start2 {
+  font-size: 32px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: 480px;
+  right: 30px;
+  color: rgba(221, 225, 0, 0.3);
+}
+
+/* 3 */
+.charenge_content3 {
+  background-color: #fff;
+  width: 310px;
+  height: 580px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 2px rgba(221, 225, 0, 1);
+  position: relative;
+}
+.charenge_content3 h4 {
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+  padding-top: 50px;
+  text-align: center;
+}
+.charenge_content3 h5{
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 10px;
+}
+/* 場所 */
+.charenge_content3 .cho .place{
+display: flex;
+}
+.charenge_content3 .cho .place p{
+font-size: 14px;
+font-family: "BIZ UDPGothic", sans-serif;
+margin-left: 3px;
+margin-bottom: 28px;
+}
+.charenge_content3 .cho .place p:first-child{
+  margin-left: 30px;
+}
+/* 課題 */
+.charenge_content3 .cho .ass{
+display: flex;
+}
+.charenge_content3 .cho .ass p{
+font-size: 14px;
+font-family: "BIZ UDPGothic", sans-serif;
+margin-left: 3px;
+margin-bottom: 28px;
+}
+.charenge_content3 .cho .ass p:first-child{
+  margin-left: 30px;
+}
+/* 内容 */
+.charenge_content3 .cho .choice_con{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .charenge_content3 .cho .choice_con p{
+  font-size: 14px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  margin-left: 3px;
+  margin-bottom: 20px;
+  }
+  .charenge_content3 .cho .choice_con p span{
+    font-size: 12px;
+    color: rgba(98, 95, 95, 1);
+  }
+  .charenge_content3 .cho .choice_con p:first-child{
+    margin-left: 30px;
+  }
+  .charenge_content3 .cho .choice_con p:last-child{
+  margin-left: 70px;
+  }
+
+
+.charenge_content3 .choice .btn2 {
+  width: 20px;
+  height: 20px;
+  margin-left: 226px;
+  background-color: #fff;
+  position: relative;
+  top: -26px;
+}
+.charenge_content3 .cho {
+  margin-top: 52px;
+}
+.charenge_content3 .back_con3 {
+  font-size: 320px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: 106px;
+  right: 64px;
+  color: rgba(221, 225, 0, 0.3);
+}
+.charenge_content3 .start3 {
+  font-size: 32px;
+  position: absolute;
+  font-family: "Shippori Mincho", serif;
+  top: 480px;
+  right: 110px;
+  color: rgba(221, 225, 0, 0.3);
+}
+.charenge_content3 .back_btn {
+  font-size: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  color: #fff;
+  background-color: rgba(221, 225, 0, 1);
+  width: 264px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.charenge_content1,
+.charenge_content2,
+.charenge_content3{
+  display: none;
 }
 /* それでも不安なあなたへ */
 
@@ -905,3 +1298,4 @@ h3 {
   font-family: "BIZ UDPGothic", sans-serif;
   margin: 40px 0 30px 0;
 }
+
