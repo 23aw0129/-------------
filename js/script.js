@@ -317,7 +317,7 @@ for(let i=0;i<inputClass2.length;i++){
 //都道府県
 const touhoku = ['北海道','青森県','岩手県','秋田県','山形県','福島県','秋田県']
 const kantou = ['茨城県','栃木県','群馬県','埼玉県','千葉県','東京都','神奈川県','新潟県','石川県','富山県','福井県','山梨県','長野県','岐阜県','静岡県','愛知県']
-const kinki = ['京都府','大阪府','三重県','滋賀県','山形県','兵庫県','奈良県','和歌山県','鳥取県','島根県','岡山県','広島県','山口県']
+const kinki = ['京都府','大阪府','三重県','滋賀県','兵庫県','奈良県','和歌山県','鳥取県','島根県','岡山県','広島県','山口県']
 const sikoku = ['徳島県','香川県','愛媛県','高知県','福岡県','佐賀県','長崎県','大分県','熊本県','宮崎県','鹿児島県','沖縄県']
 const All = ['北海道','青森県','岩手県','秋田県','山形県','福島県','秋田県','茨城県','栃木県','群馬県','埼玉県','千葉県','東京都','神奈川県','新潟県','石川県','富山県','福井県','山梨県','長野県','岐阜県','静岡県','愛知県','京都府','大阪府','三重県','滋賀県','山形県','兵庫県','奈良県','和歌山県','鳥取県','島根県','岡山県','広島県','山口県','徳島県','香川県','愛媛県','高知県','山形県','福岡県','佐賀県','長崎県','大分県','熊本県','宮崎県','鹿児島県','沖縄県']
 let place = document.querySelector('.place_p')
@@ -432,7 +432,7 @@ let ass_p_3 = document.querySelector('.ass_p');
 
 const choice3 = [`自分に何ができるのかを<br>
                   たくさん試し答えが出る<br>
-                  までひたすら続ける。<span>*宿泊あり/宿舎なし兼用</span>`]
+                  までひたすら続ける。<br><span>*宿泊あり/宿舎なし兼用</span>`]
 let choice_p_3= document.querySelector('.choice_p')
 
 
@@ -441,22 +441,37 @@ let choice_p_b_3 =document.querySelector('.choice_p_b')
 
 
 inputClass[3].addEventListener("click",()=>{
-  ass_p._3innerHTML = ass3[Math.floor(Math.random()*ass.length)]
-  choice_p_3.innerHTML = choice3[Math.floor(Math.random()*choice.length)]
-  choice_p_b_3.innerHTML = choiceB3[Math.floor(Math.random()*choiceB.length)]
+  ass_p_3.innerHTML = ass3[Math.floor(Math.random()*ass3.length)]
+  choice_p_3.innerHTML = choice3[Math.floor(Math.random()*choice3.length)]
+  choice_p_b_3.innerHTML = choiceB3[Math.floor(Math.random()*choiceB3.length)]
 })
 
 //特になし
-const ass4 = [`d`,
+const ass4 = [`リスクを受け入れ、失敗を<br>
+恐れない(大きいお金を賭ける、<br>
+旅先で出会った人に写真を撮って<br>
+もらえるように頼む)など`,`旅で目的地最寄りまで着いたら<br>
+スマホ禁止（宿舎などでは例外）<br>
+大雑把な計画を自分で密度を濃<br>
+い旅へと変えていこう`,`全く興味のないものを体験して<br>
+みよう。体験したことないもの<br>
+でも可`,`自分が興味のあることをひたすら<br>
+挑戦してみよう。`,
               ]
 let ass_p_4 = document.querySelector('.ass_p');
 
 
-const choice4 = [`d`]
+const choice4 = [`色んな人に話しかけその人の、<br>
+ことやお勧めの場所などを<br>
+聞いてみよう<span>*宿泊あり/宿舎なし兼用</span>`,`色んな人に話しかけその人の、<br>
+ことやお勧めの場所などを<br>
+聞いてみよう<span>*宿泊あり/宿舎なし兼用</span>`,`自分に何ができるのかを<br>
+たくさん試し答えが出る<br>
+までひたすら続ける。<span>*宿泊あり/宿舎なし兼用</span>`]
 let choice_p_4= document.querySelector('.choice_p')
 
 
-const choiceB4 = [`d`]
+const choiceB4 = [``]
 let choice_p_b_4 =document.querySelector('.choice_p_b')
 
 
