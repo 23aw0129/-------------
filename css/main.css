@@ -1021,10 +1021,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows:repeat(5,1fr);
-  width: 165px;
+  width: 171px;
   row-gap: 40px;
   margin: 0 auto 46px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .charenge_content2 .cho p{
   grid-column: 1/4;
@@ -1047,6 +1049,9 @@ h3 {
   margin-top: -15px;
   margin-left: 20px;
   font-family: "BIZ UDPGothic", sans-serif;
+  position: relative;
+  z-index: 1px;
+
 }
 
 .charenge_content2 .back_con2 {
@@ -1056,6 +1061,7 @@ h3 {
   top: 100px;
   right: -10px;
   color: rgba(221, 225, 0, 0.3);
+  z-index: 0;
 }
 .charenge_content2 .start2 {
   font-size: 32px;
@@ -1135,8 +1141,8 @@ margin-bottom: 28px;
   .charenge_content3 .cho .choice_con p:first-child{
     margin-left: 30px;
   }
-  .charenge_content3 .cho .choice_con p:last-child{
-  margin-left: 70px;
+  .charenge_content3 .cho .choice_con .choice_p_b{
+  margin-left: 67px;
   }
 
 
@@ -1158,6 +1164,7 @@ margin-bottom: 28px;
   top: 106px;
   right: 64px;
   color: rgba(221, 225, 0, 0.3);
+  z-index: 0;
 }
 .charenge_content3 .start3 {
   font-size: 32px;
@@ -1166,6 +1173,7 @@ margin-bottom: 28px;
   top: 480px;
   right: 110px;
   color: rgba(221, 225, 0, 0.3);
+  z-index: 0;
 }
 .charenge_content3 .back_btn {
   font-size: 16px;
@@ -1178,6 +1186,8 @@ margin-bottom: 28px;
   border-radius: 10px;
   margin-top: 16px;
   margin-left: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .charenge_content1,
